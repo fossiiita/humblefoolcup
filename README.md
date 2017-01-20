@@ -13,4 +13,4 @@ Take inspiration from these sites. Workflow should be in accordance to the issue
 Join us on [Gitter](https://gitter.im/opencode2017) for any general queries.
 
 ##### Project Maintainer:
-@magician03
+Diwakar [Github](https://github.com/magician03) [Facebook](https://www.facebook.com/magician03)
