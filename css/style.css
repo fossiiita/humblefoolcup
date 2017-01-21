@@ -5,7 +5,7 @@
  *
  * Made By MaterializeCSS.com
  */
-
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,900);
 .icon-block {
   padding: 0 15px;
 }
@@ -13,9 +13,11 @@
 	font-size: inherit;
 }
 
+
 .sponsor-logos img {
   max-height: 200px;
   max-width : 400px;
   margin : 10px;
   align-content: center;
 }
+
