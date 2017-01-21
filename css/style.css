@@ -12,3 +12,10 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+.sponsor-logos img {
+  max-height: 200px;
+  max-width : 400px;
+  margin : 10px;
+  align-content: center;
+}

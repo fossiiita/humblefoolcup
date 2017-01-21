@@ -1,104 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("a").on('click', function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function () {
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+
+              window.location.hash = hash;
+            });
+          }
+        });
       });
-    } // End if
-  });
-});
-</script>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Humblefool Cup</title>
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Humblefool Cup</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  </head>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
-<body>
+  <body>
+    <nav class="light-blue lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="#">Navbar Link</a>
+          </li>
+          <li>
+            <a href="#timeline">Timeline</a>
+          </li>
+          <li>
+            <a href="#sponsors">Sponsors</a>
+          </li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <li>
+            <a href="#">Navbar Link</a>
+          </li>
+          <li>
+            <a href="#timeline">Timeline</a>
+          </li>
+          <li>
+            <a href="#sponsors">Sponsors</a>
+          </li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+    </nav>
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br><br>
+        <h1 class="header center orange-text">Humblefool Cup</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+        </div>
+        <br><br>
+      </div>
 
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-        <li><a href="#timeline">Timeline</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-        <li><a href="#timeline">Timeline</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
-  </nav>
-  <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">Humblefool Cup</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+      <div class="section">
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text">
+                <i class="material-icons">flash_on</i>
+              </h2>
+              <h5 class="center">Speeds up development</h5>
+              <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text">
+                <i class="material-icons">group</i>
+              </h2>
+              <h5 class="center">User Experience Focused</h5>
+              <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms
+                allow for a more unified user experience.</p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text">
+                <i class="material-icons">settings</i>
+              </h2>
+              <h5 class="center">Easy to work with</h5>
+              <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-      </div>
       <br><br>
-
+      <div class="section">
+      </div>
     </div>
-  </div>
-
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+    <h1 id="timeline" align="center">Event Timeline</h1>
+    <ul class="timeline">
+      <!-- Item 1 -->
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Lorem ipsum.</span>
+            <span class="time-wrapper">
+              <span class="time">March 2017</span>
+            </span>
           </div>
+          <div class="desc">Lorem ipsum Nisi labore aute do aute culpa magna nulla voluptate exercitation deserunt proident.</div>
         </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+      </li>
+      <!-- Item 2 -->
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Lorem ipsum Anim.</span>
+            <span class="time-wrapper">
+              <span class="time">March 2017</span>
+            </span>
           </div>
+          <div class="desc">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
         </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+      </li>
+      <!-- Item 3 -->
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Lorem Occaecat.</span>
+            <span class="time-wrapper">
+              <span class="time">March 2017</span>
+            </span>
           </div>
+
 
 
                 </nav>
@@ -162,39 +215,120 @@ $(document).ready(function(){
           <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
 
 
+          <div class="desc">Lorem ipsum Minim labore Ut cupidatat quis qui deserunt proident fugiat pariatur cillum cupidatat reprehenderit sit id dolor consectetur ut.</div>
+       </div>
+      </li>
+    </ul>
+
+
+    <!-- Sponsors Section -->
+    <div class="container" id="sponsors">
+      <div class="row center-align">
+        <h2>Sponsors</h2>
+        <p>
+          Sponsors are an important part of any event. It is not an exaggeration when we say that we owe the event's success to our sponsors. It is our sponsors' unwavering support which encouraged us to conduct such a large scale tournament.
+        </p>
+      </div>
+      <div class="sponsor-logos center-align">
+        <div class="row center-align">  <!-- 1 row for 2-3 sponsor logos -->
+          <div class="col s12 m6">
+            <img class="responsive-img" src="images/sponsors/github.png" alt="GitHub"/>
+          </div>
+          <div class="col s12 m6">
+            <img class="responsive-img" src="images/sponsors/gitlab.svg" alt="GitHub"/>
+          </div>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+        <div class="row center-align valign-wrapper"> <!-- add valign-wrapper to row if you want to verticallya align any logo -->
+          <div class="col s12 m4 ">
+            <img class="responsive-img valign" src="images/sponsors/hackster.png"  alt="GitHub"/><!-- add .valign to align vertically -->
+          </div>
+          <div class="col s12 m4">
+            <img class="responsive-img" src="images/sponsors/KPT.jpg" alt="GitHub"/>
+          </div>
+          <div class="col s12 m4">
+            <img class="responsive-img" src="images/sponsors/zulip.png" alt="GitHub"/>
+          </div>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+        <div class="row center-align">
+          <div class="col s12">
+            <img class="responsive-img" src="images/sponsors/npm.png" alt="GitHub"/>
+          </div>
+        </div>
+        <br>
+        <h4 class="blue-text">Platform</h4>
+        <br>
+        <div class="row center-align">
+          <div class="col s12">
+            <img class="responsive-img" src="images/sponsors/hackerearth.png" alt="GitHub"/>
+          </div>
+        </div>
+        <br>
+        <h4 class="blue-text">Patrons</h4>
+        <br>
+        <div class="row center-align valign-wrapper">
+          <div class="col s12 m6">
+            <img class="responsive-img" src="images/sponsors/wolframalpha.jpg" alt="GitHub"/>
+          </div>
+          <div class="col s12 m6">
+            <img class="responsive-img valign" src="images/sponsors/codepen.png" alt="GitHub"/>
+          </div>
         </div>
       </div>
     </div>
-    <div class="footer-copyright">
+    <footer class="page-footer orange">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Company Bio</h5>
+            <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Settings</h5>
+            <ul>
+              <li>
+                <a class="white-text" href="#!">Link 1</a>
+              </li>
+              <li>
+                <a class="white-text" href="#!">Link 2</a>
+              </li>
+              <li>
+                <a class="white-text" href="#!">Link 3</a>
+              </li>
+              <li>
+                <a class="white-text" href="#!">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li>
+                <a class="white-text" href="#!">Link 1</a>
+              </li>
+              <li>
+                <a class="white-text" href="#!">Link 2</a>
+              </li>
+              <li>
+                <a class="white-text" href="#!">Link 3</a>
+              </li>
+              <li>
+                <a class="white-text" href="#!">Link 4</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
+      <div class="footer-copyright">
+        <div class="container">
+          Made by
+          <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        </div>
+      </div>
+    </footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
   </body>
+
 </html>
