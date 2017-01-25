@@ -392,7 +392,10 @@ if (jQuery) {
       ****************/
 
       // Accordion Open
-      function accordionOpen(object) {
+      //uses classList, setAttribute, and querySelectorAll
+//if you want this to work in IE8/9 youll need to polyfill these
+
+function accordionOpen(object) {
         $panel_headers = $this.find('> li > .collapsible-header');
         if (object.hasClass('active')) {
           object.parent().addClass('active');
@@ -424,7 +427,7 @@ if (jQuery) {
             });
           }
         });
-      }
+}
 
       // Expandable Open
       function expandableOpen(object) {
