@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("a").on('click', function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+
+
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Our Team</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body id="teams">
+   <nav class="light-blue lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+           <li>
+            <a href="index.html">Welcome</a>
+          </li>
+          <li>
+            <a href="index.html">Timeline</a>
+          </li>
+           <li>
+            <a href="index.html">Events</a>
+          </li>
+          <li>
+            <a href="index.html">Sponsors</a>
+          </li>
+         <li>
+            <a href="index.html">Faq</a>
+          </li>
+         
+          
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <li>
+            <a href="index.html">Welcome</a>
+          </li>
+          <li>
+            <a href="index.html">Timeline</a>
+          </li>
+           <li>
+            <a href="index.html">Events</a>
+          </li>
+          <li>
+            <a href="index.html">Sponsors</a>
+          </li>
+         <li>
+            <a href="index.html">Faq</a>
+          </li>
+          
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+    </nav>
+    <!--team-->
+    <div class="section scrollspy" id="team" >
+    <div class="container">
+        <h2 class="header text_b" align="center" > Our Team </h2>
+        <div class="row">
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="http://www.placecage.com/g/300/300">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Lorem Ipsum <br/>
+                            <small><em><a class="red-text text-darken-1" href="#">Lorem Ipsum</a></em></small>
+                        </span>
+                            
+                        <p>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-github-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-rss-square"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="http://www.placecage.com/g/300/300">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Lorem Ipsum<br/>
+                            <small><em><a class="red-text text-darken-1" href="#">Lorem Ipsum</a></em></small>
+                        </span>
+                        <p>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-github-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-rss-square"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="http://www.placecage.com/g/300/300">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">
+                            Lorem Ipsum <br/>
+                            <small><em><a class="red-text text-darken-1" href="#">Lorem Ipsum</a></em></small></span>
+                        <p>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-github-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-rss-square"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="http://www.placecage.com/g/300/300">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Lorem Ipsum<br/>
+                            <small><em><a class="red-text text-darken-1" href="#">Lorem Ipsum</a></em></small>
+                        </span>
+                        <p>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-github-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-rss-square"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="http://www.placecage.com/g/300/300">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Lorem Ipsum<br/>
+                            <small><em><a class="red-text text-darken-1" href="#">Lorem Ipsum</a></em></small>
+                        </span>
+                        <p>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-github-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-rss-square"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="http://www.placecage.com/g/300/300">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Lorem Ipsum<br/>
+                            <small><em><a class="red-text text-darken-1" href="#">Lorem Ipsum</a></em></small>
+                        </span>
+                        <p>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-github-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-rss-square"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="http://www.placecage.com/g/300/300">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Lorem Ipsum<br/>
+                            <small><em><a class="red-text text-darken-1" href="#">Lorem Ipsum</a></em></small>
+                        </span>
+                        <p>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-github-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-rss-square"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="http://www.placecage.com/g/300/300">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Lorem Ipsum<br/>
+                            <small><em><a class="red-text text-darken-1" href="#">Lorem Ipsum</a></em></small></span>
+                        <p>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-github-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-rss-square"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+
+     <footer class="page-footer orange">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col l3 s12">
+            <h5 class="white-text">ORGANISERS</h5>
+            <ul>
+              <li>
+                <a class="white-text">1st organiser - 0000000000</a>
+              </li>
+              <li>
+                <a class="white-text" >2nd organiser - 0000000000</a>
+              </li>
+              <li>
+                <a class="white-text" >3rd organiser - 0000000000</a>
+              </li>
+             
+            </ul>
+          </div>
+          
+          <div align="right" class="col l3 s35 m10">
+            
+            <ul>
+              <li>
+                <a class="white-text" href="https://aparoksha.iiita.ac.in/">APAROKSHA</a>
+              </li>
+              <li>
+                <a class="white-text" href="team.html">TEAM PAGE</a>
+              </li>
+             
+              
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">In the memory of
+          HARSHA SURYANARAYANA by participants of  <a class="white-text" href="https://fossiiita.github.io/opencodecollab/">OpenCode</a>
+      </div>
+    </footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <!-- Load jQuery -->
+
+  <!-- jQuery Code for the View All Button -->
+  <script>
+    $(document).ready(function(){
+      $(".fadeIn").click(function(){
+      $("div.row2").fadeIn();
+      $("button.fadeIn").hide();
+      });
+    });
+  </script>
+  </body>
+
+</html>
