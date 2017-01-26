@@ -392,7 +392,7 @@ if (jQuery) {
       ****************/
 
       // Accordion Open
-      function accordionOpen(object) {
+function accordionOpen(object) {
         $panel_headers = $this.find('> li > .collapsible-header');
         if (object.hasClass('active')) {
           object.parent().addClass('active');
@@ -424,7 +424,7 @@ if (jQuery) {
             });
           }
         });
-      }
+}
 
       // Expandable Open
       function expandableOpen(object) {
