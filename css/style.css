@@ -11,7 +11,10 @@
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,900);
 
-
+#rigt{
+  float: right;
+  margin-right: -170px;
+}
 
 .container {
   max-width:960px;
