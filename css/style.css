@@ -15,10 +15,7 @@
   float: right;
   margin-right: -170px;
 }
-#orgleft{
-  margin-left: -150px;
-  float: left;
-}
+
 .container {
   max-width:960px;
   margin:0 auto;
