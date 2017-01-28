@@ -12,6 +12,48 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,900);
 
 
+#teams{
+  margin-top: 0px;
+}
+
+h2{
+    font-weight: 300;
+    padding-bottom: 5px;
+    position: relative;
+}
+h2:before{
+    content: "";
+    position: absolute;
+    width: 34%;
+    height: 1px;
+    bottom: 0;
+    left: 32.75%;
+    border-bottom: 2px solid;
+}
+
+img{
+  margin-top: 10px;
+}
+
+img:hover {
+box-shadow: 0 1px 8px black;
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+.fa-twitter-square:hover{
+  color: #1dcaff;
+}
+.fa-rss-square:hover{
+  color: #FF6600;
+}
+.fa-github-square:hover{
+  color: #040204;
+}
+
+
+
 
 .container {
   max-width:960px;
