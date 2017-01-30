@@ -29,17 +29,18 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-
-  <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/main.css">
   </head>
-<body>
-<div id="loader-wrapper">
+
+  <body>
+  <div id="loader-wrapper">
       <div id="loader"></div>
 
       <div class="loader-section section-left"></div>
             <div class="loader-section section-right"></div>
 
     </div>
+
    <nav class="light-blue lighten-1" role="navigation">
       <div class="nav-wrapper container">
         <a id="logo-container" href="#" class="brand-logo">Logo</a>
@@ -233,35 +234,21 @@
 <!--FAQ-->
 <div class="container">
           <h1 class="heading-primary">FAQ</h1>
-          <div class="accordion">
-            <dl>
-              <dt>
-                <a id ="faq" href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">Lorem ipsum dolor sit amet, consectetur Test adipiscing elit.</a>
-              </dt>
-              <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
-                <p>Lorem ipsum dolor sit amet, consectetur Test adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris. </p>
-                <p>Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
-              </dd>
-              <dt>
-                <a href="#faq2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">
-                  Lorem ipsum dolor sit amet, consectetur Test adipiscing elit.</a>
-              </dt>
-              <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris. </p>
-                <p>Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
-              </dd>
-              <dt>
-                <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
-                  Lorem ipsum dolor sit amet, consectetur Test adipiscing elit.
-                </a>
-              </dt>
-              <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris. </p>
-                <p>Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
-              </dd>
-            </dl>
-          </div>
-        </div>
+            <ul class="collapsible popout" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              </li>
+            </ul>
+</div>
     <!-- Sponsors Section -->
     <div class="container" id="sponsors">
       
@@ -303,9 +290,7 @@
       </div>
     </footer>
     <!--  Scripts-->
-   
-  <script src="js/main.js"></script>
-    <script src="js/index.js"></script>
+     <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
@@ -370,7 +355,6 @@ switchAccordion = function(e) {
     accordionToggles[i].addEventListener('click', switchAccordion, false);
   }
 })();</script>
-
   </body>
 
 </html>
