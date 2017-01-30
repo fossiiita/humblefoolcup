@@ -1,0 +1,80 @@
+header {
+  height:360px;
+  z-index:10;
+}
+.header-banner {
+  background-color: #333;
+  background-image: url('https://pbs.twimg.com/media/C3azZzoWYAAiokN.jpg:large');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+header .logo {
+  background-color: transparent;
+  background-image: url('');
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 72px; 
+  height: 256px;
+  width: 256px;
+}
+
+header h1 {
+  position: absolute;
+  top: 72px; 
+  left: 240px;
+  color: #fff;
+}
+
+.fixed-header {
+  position: fixed;
+  top:0; left:0;
+  width: 100%; 
+}
+
+nav {
+  width:100%;
+  height:60px;
+  background: #292f36;
+  postion:fixed;
+  z-index:1000;
+}
+
+nav ul { 
+  list-style-type: none;
+  margin: 0 auto;
+  padding-left:0;
+  text-align:right;
+  width: 960px; 
+  max-width: 100%;
+}
+nav ul li { 
+  display: inline-block; 
+  line-height: 60px;
+  margin-left: 10px;
+}
+nav ul li a {
+  text-decoration: none; 
+  color: #a9abae;
+}
+
+
+/* demo */
+.content{ width: 960px; max-width: 100%; margin:0 auto; padding-top: 60px; }
+article { width: 720px; float: left; }
+article p:first-of-type { margin-top: 0; }
+aside { width: 120px; float: right; }
+aside img { max-width: 100%; }
+body { 
+  color: #292f36;
+  font-family: helvetica;
+  line-height: 1.6;
+}
+
+
+/* resets */
+body { margin:0px; padding:0px; }
