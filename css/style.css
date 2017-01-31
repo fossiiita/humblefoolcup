@@ -769,7 +769,7 @@ body{
 	font-family:"arial",heletica,sans-serif;
 	font-size:12px;
         background-color: #2980b9;
-        background-image : url(../humblefool/img/background.png) ;
+        background-image : url('../humblefool/img/background.png') ;
         background-repeat: repeat 0 0;
 	-webkit-animation: 10s linear 0s normal none infinite animate;
 	-moz-animation: 10s linear 0s normal none infinite animate;
