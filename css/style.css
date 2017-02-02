@@ -803,3 +803,16 @@ body{
 	from {background-position:0 0;}
 	to {background-position: 500px 0;}
 }
+
+#sponsors .responsive-img {
+	background-color: white;
+	padding: 20px;
+}
+
+h1, #Welcome, #about {
+	color: white;
+}
+
+.card-media-body-supporting-bottom-reveal {
+	font-weight: bold;
+}
