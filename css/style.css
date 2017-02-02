@@ -808,3 +808,11 @@ body{
 	background-color: white;
 	padding: 20px;
 }
+
+h1, #Welcome, #about {
+	color: white;
+}
+
+.card-media-body-supporting-bottom-reveal {
+	font-weight: bold;
+}
