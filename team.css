@@ -43,7 +43,7 @@ body {
   line-height: 1;
   text-shadow: #EDEDED 3px 2px 0;
   position: relative;
-  font-size: 10.2vw;
+  font-size: 1.2vw;
 }
 #logo:after {
   content:"humblefoolcup";
