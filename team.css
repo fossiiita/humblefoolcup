@@ -23,27 +23,6 @@ footer{
   position: relative;
 }
 
-
-/* footer h1 {
-  position: relative;
-  z-index: -2;
-  height: 300px;
-  background: none repeat scroll 0% 0% #31353A;
-  font-size: 12px;
-  color: #CCC;
-  text-align: center;
-}
-
-/*footer h1 {
-  bottom: 110px;
-  width: 800px;
-  text-align: center;
-  font-weight: bold;
-  color: #FFF;
-  font-size: 1.125rem;
-  
-}*/
-
 body {
   overflow-x: hidden; 
   height: 100%;
@@ -54,12 +33,11 @@ body {
   background: #eee url(http://subtlepatterns.com/patterns/extra_clean_paper.png);
 }
 #logo {
-  margin-left: 60px;
+  margin-left: 5%;
   font-family: 'Open Sans', sans-serif;
   color: #555;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 130px;
   font-weight: 800;
   letter-spacing: -3px;
   line-height: 1;
