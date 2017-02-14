@@ -4,7 +4,7 @@ header {
 }
 .header-banner {
   background-color: #333;
-  background-image: url('https://pbs.twimg.com/media/C3azZzoWYAAiokN.jpg:large');
+  background-image: url('../humblefool/img/header.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

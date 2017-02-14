@@ -59,7 +59,7 @@
           padding:2em;
           display:block;
           text-decoration:none;
-          color:#fff;
+          color:#000;
           transition:background-color 0.5s ease-in-out;
   border-bottom:1px solid darken(#29b6f6, 5%);
   &:before {
@@ -349,7 +349,7 @@ nav ul a {
 }
 
 input, textarea {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
 }
 
 nav a.button-collapse {
@@ -763,21 +763,7 @@ html {
   margin : 10px;
   align-content: center;
 }
-body{
-	margin:0;
-	padding:0;
-	font-family:"arial",heletica,sans-serif;
-	font-size:12px;
-        background-color: #2980b9;
-        background-image : url('../humblefool/img/background.png') ;
-        background-repeat: repeat 0 0;
-	-webkit-animation: 10s linear 0s normal none infinite animate;
-	-moz-animation: 10s linear 0s normal none infinite animate;
-	-ms-animation: 10s linear 0s normal none infinite animate;
-	-o-animation: 10s linear 0s normal none infinite animate;
-	animation: 10s linear 0s normal none infinite animate;
- 
-}
+
  
 @-webkit-keyframes animate {
 	from {background-position:0 0;}
@@ -810,7 +796,7 @@ body{
 }
 
 h1, #Welcome, #about {
-	color: white;
+	color: #000;
 }
 
 .card-media-body-supporting-bottom-reveal {

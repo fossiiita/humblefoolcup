@@ -1073,11 +1073,11 @@ header h1{
 }
 
 .light-blue {
-  background-color: #03a9f4 !important;
+  background-color: #3da6db !important;
 }
 
 .light-blue-text {
-  color: #03a9f4 !important;
+  color: #3da6db !important;
 }
 
 .light-blue.lighten-5 {
@@ -1749,7 +1749,7 @@ header h1{
 }
 
 .yellow-text {
-  color: #ffeb3b !important;
+  color: #333333 !important;
 }
 
 .yellow.lighten-5 {
@@ -1969,7 +1969,7 @@ header h1{
 }
 
 .orange {
-  background-color: #ff9800 !important;
+  background-color: #474746 !important;
 }
 
 .orange-text {
