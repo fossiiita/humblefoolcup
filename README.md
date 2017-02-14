@@ -13,6 +13,9 @@ Will be held in two rounds
 1. Online round will be held world wide.
 2. Final offline round round will be held in IIIT-A where top 50 from the first round will particpate for the HumbleFool Cup.
 
+# NO MORE PR'S will be merged of this project.
+
+
 ### Development:
 
 Have a look at these sites: [IIITAHacks](https://geekhaven.iiita.ac.in/iiitahacks/) || [HackInTheNorth](http://www.hackinthenorth.com/).
